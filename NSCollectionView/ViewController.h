@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<NSCollectionViewDelegate,NSCollectionViewDataSource>
 
-
+@property (weak) IBOutlet NSCollectionView *collectionView;
+@property (nonatomic , strong) NSMutableArray *dataArr;
 @end
 

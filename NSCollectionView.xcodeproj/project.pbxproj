@@ -12,6 +12,8 @@
 		51352A3420F497CB00705D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51352A3320F497CB00705D4A /* Assets.xcassets */; };
 		51352A3720F497CB00705D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51352A3520F497CB00705D4A /* Main.storyboard */; };
 		51352A3A20F497CB00705D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51352A3920F497CB00705D4A /* main.m */; };
+		51352D1A20FD7CD600705D4A /* CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 51352D1820FD7CD600705D4A /* CustomItem.m */; };
+		51352D1B20FD7CD600705D4A /* CustomItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51352D1920FD7CD600705D4A /* CustomItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,9 @@
 		51352A3820F497CB00705D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51352A3920F497CB00705D4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51352A3B20F497CB00705D4A /* NSCollectionView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSCollectionView.entitlements; sourceTree = "<group>"; };
+		51352D1720FD7CD600705D4A /* CustomItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomItem.h; sourceTree = "<group>"; };
+		51352D1820FD7CD600705D4A /* CustomItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomItem.m; sourceTree = "<group>"; };
+		51352D1920FD7CD600705D4A /* CustomItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,9 @@
 				51352A2E20F497CA00705D4A /* AppDelegate.m */,
 				51352A3020F497CA00705D4A /* ViewController.h */,
 				51352A3120F497CA00705D4A /* ViewController.m */,
+				51352D1720FD7CD600705D4A /* CustomItem.h */,
+				51352D1820FD7CD600705D4A /* CustomItem.m */,
+				51352D1920FD7CD600705D4A /* CustomItem.xib */,
 				51352A3320F497CB00705D4A /* Assets.xcassets */,
 				51352A3520F497CB00705D4A /* Main.storyboard */,
 				51352A3820F497CB00705D4A /* Info.plist */,
@@ -101,6 +109,11 @@
 				TargetAttributes = {
 					51352A2920F497CA00705D4A = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -128,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51352A3420F497CB00705D4A /* Assets.xcassets in Resources */,
+				51352D1B20FD7CD600705D4A /* CustomItem.xib in Resources */,
 				51352A3720F497CB00705D4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51352A3220F497CA00705D4A /* ViewController.m in Sources */,
+				51352D1A20FD7CD600705D4A /* CustomItem.m in Sources */,
 				51352A3A20F497CB00705D4A /* main.m in Sources */,
 				51352A2F20F497CA00705D4A /* AppDelegate.m in Sources */,
 			);
